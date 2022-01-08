@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uos-MC-cuG">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="WeatherForecast" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="fhA-3O-wDL">
+                                <rect key="frame" x="169.33333333333334" y="271.66666666666669" width="75.666666666666657" height="193"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCQ-ga-Bfx">
+                                        <rect key="frame" x="0.0" y="0.0" width="75.666666666666671" height="31"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Call List"/>
+                                        <connections>
+                                            <action selector="callListTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SeM-8x-6VA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MY3-NG-5W7">
+                                        <rect key="frame" x="0.0" y="81" width="75.666666666666671" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Buy List"/>
+                                        <connections>
+                                            <action selector="buyListTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="90Y-bm-OuM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAo-7J-3Xi">
+                                        <rect key="frame" x="0.0" y="162" width="75.666666666666671" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Sell List"/>
+                                        <connections>
+                                            <action selector="sellListTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JFI-G8-fp5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fhA-3O-wDL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WCJ-Du-bw8"/>
+                            <constraint firstItem="fhA-3O-wDL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vYI-s6-TCW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GmW-l9-G6N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1043.4782608695652" y="138.58695652173915"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fhM-kH-uO3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uos-MC-cuG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="j1G-7p-9Jj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="j0o-rD-Eo4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gAI-5r-qqK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="138.58695652173915"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SellListCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SellListCell" rowHeight="142" id="Ca7-yd-zJi" customClass="SellListCell" customModule="WeatherForecast" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="142"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ca7-yd-zJi" id="bHt-0u-0Kj">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="142"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="npb-r5-YVk">
+                        <rect key="frame" x="24" y="24" width="366" height="94"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxW-Iz-kza">
+                                <rect key="frame" x="0.0" y="0.0" width="366" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1w-W0-Y8j">
+                                <rect key="frame" x="0.0" y="37" width="366" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFo-XU-bo3">
+                                <rect key="frame" x="0.0" y="73.5" width="366" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="npb-r5-YVk" secondAttribute="bottom" constant="24" id="1ZW-Vo-aKa"/>
+                    <constraint firstItem="npb-r5-YVk" firstAttribute="leading" secondItem="bHt-0u-0Kj" secondAttribute="leading" constant="24" id="2N0-L2-qm0"/>
+                    <constraint firstAttribute="trailing" secondItem="npb-r5-YVk" secondAttribute="trailing" constant="24" id="30o-Vi-hhW"/>
+                    <constraint firstItem="npb-r5-YVk" firstAttribute="top" secondItem="bHt-0u-0Kj" secondAttribute="top" constant="24" id="DfW-7z-AQq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="qxW-Iz-kza" id="3Tu-DW-pXG"/>
+                <outlet property="priceLabel" destination="g1w-W0-Y8j" id="66F-N8-2Yc"/>
+                <outlet property="quantityLabel" destination="bFo-XU-bo3" id="u6T-SR-ik6"/>
+            </connections>
+            <point key="canvasLocation" x="373.91304347826087" y="-103.125"/>
+        </tableViewCell>
+    </objects>
+</document>
